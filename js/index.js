@@ -5,7 +5,7 @@
   console.log(mytype);
 }
 /* left */
-fetch('../include/left.html')
+fetch('/WebsiteREdesign-Lotteria/include/left.html')
   .then(response => response.text())
   .then(data => {
     document.querySelector('.left-include').innerHTML = data;
