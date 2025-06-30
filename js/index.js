@@ -1,18 +1,18 @@
 /* 전역 함수 버튼 클릭하면 다른 스크립트에 있는 함수에 매개변수로
  전달 가능 */
- function saveValue(mytype) {
+  function saveValue(mytype) {
   localStorage.setItem('myType', mytype);
   console.log(mytype);
 }
 /* left */
-fetch('../include/left.html')
+fetch('/webRedesign-Lotteria/include/left.html')
   .then(response => response.text())
   .then(data => {
     document.querySelector('.left-include').innerHTML = data;
 
   });
 /* right */
-fetch('../include/right.html')
+fetch('/webRedesign-Lotteria/include/right.html')
   .then(response => response.text())
   .then(data => {
     document.querySelector('.right-include').innerHTML = data;
@@ -20,7 +20,7 @@ fetch('../include/right.html')
 
 
 /* 헤더 불러오기 */
-fetch('../include/header.html')
+fetch('/webRedesign-Lotteria/include/header.html')
   .then(response => response.text())
   .then(data => {
     document.querySelector('.header-include').innerHTML = data;
@@ -212,7 +212,7 @@ var swiper = new Swiper(".shorts-swiper", {
 });
 
 /* footer */
-fetch('../include/footer.html')
+fetch('/webRedesign-Lotteria/include/footer.html')
   .then(response => response.text())
   .then(data => {
     document.querySelector('.footer-include').innerHTML = data;
@@ -223,4 +223,11 @@ fetch('../include/footer.html')
         btn.style.display = (window.scrollY > 300) ? "flex" : "none";
       }
     };
+  });
+
+/* bottom */
+fetch('/webRedesign-Lotteria/include/bottom.html')
+  .then(response => response.text())
+  .then(data => {
+    document.querySelector('.bottom-include').innerHTML = data;
   });
