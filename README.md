@@ -25,25 +25,7 @@
 <br/>
 <br/>
 
-<details>
-<summary>🇺🇸 English</summary>
 
-# Lotteria
-Lotteria
-
-</details>
-
-<details>
-<summary>🇯🇵 日本語</summary>
-
-# ロッテリア
-ロッテリア
-
-</details>
-
-<br/>
-<br/>
-<br/>
 
 ## 목차
 
